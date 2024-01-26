@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amgine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h2>CifraWeb</h2>
+      <div class="social-media">
+        <a href="https://github.com/helofleury?tab=repositories" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+
+  <div class="container">
+    
+    <label for="inputText">Texto:</label>
+    <input type="text" id="inputText" placeholder="Insira o texto">
+    <button class="encryptBtn" onclick="encryptText()">Criptografar</button>
+    <button class="decryptBtn" onclick="decryptText()">Descriptografar</button>
+    <div class="hiddenMessages" id="hiddenMessages">
+      <h2>Mensagens Escondidas</h2>
+      <p id="hiddenText"></p>
+      <button onclick="copyToClipboard()">Copiar</button>
+    </div>
+    <p id="resultText">Resultado:</p>
+  </div>
+  <script src="https://kit.fontawesome.com/a747b09475.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
+
